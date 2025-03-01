@@ -1,0 +1,26 @@
+{
+  "name": "live-resume",
+  "version": "1.0.0",
+  "description": "In today's digital age, having an online presence is crucial for professionals across all industries. One way to establish an online presence is by creating a personal portfolio website that showcases your skills, experience, and accomplishments. With the increasing demand for data-driven insights in the business world, business analytics professionals are no exception. This is where the Pradyumna.ie website comes into play, offering a sample portfolio for business analytics professionals to display their works and projects in a straightforward manner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@popperjs/core": "^2.0.6",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  },
+  "keywords": []
+}
