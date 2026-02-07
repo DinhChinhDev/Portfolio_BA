@@ -71,7 +71,7 @@ $('.hover-box').hover(
       navigator.clipboard.writeText(currentURL)
       .then(() => {
           // Thông báo cho người dùng rằng đường link đã được sao chép
-          alert('Link đã được sao chép vào clipboard!');
+          alert('Link đã được sao chép vào clipboard! Hãy chia sẻ tôi đến với mọi người nhé :)');
       })
       .catch(err => {
           console.error('Không thể sao chép link: ', err);
