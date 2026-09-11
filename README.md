@@ -13,7 +13,7 @@ work/<slug>.html        One page per case study (Context → Problem → My role
 resume.html             Full resume (experience, education, skills, certifications) + Download PDF / Print
 blog.html               Writing — short notes (links to Instagram posts)
 contact.html            Contact details + form (FormSubmit → delivered to your inbox, AJAX with no-JS fallback)
-404.html                Not-found page (GitHub Pages serves it automatically; uses root-absolute links)
+404.html                Not-found page (GitHub Pages serves it automatically; resolves links via <base> so it works at github.io/Portfolio_BA/ and on the custom domain)
 sitemap.xml, robots.txt SEO
 
 assets/css/main.css     Design system ("Liquid Glass"): tokens, glass surfaces, layout, components, light/dark
@@ -21,7 +21,6 @@ assets/js/main.js       Theme toggle, mobile nav, cursor light, scroll reveal, f
 assets/images/          Optimised images (≤1600px). Originals kept in assets/images/_originals/
                         favicon.svg / favicon-32.png / apple-touch-icon.png — the "overlap" glyph (business ∩ engineering)
 assets/files/           CV PDF
-CNAME                   Custom domain for GitHub Pages
 ```
 
 ## Editing content
@@ -58,7 +57,12 @@ or `npm run dev` (uses `npx serve`). Open http://localhost:4173.
 
 ## Deploy
 
-GitHub Pages serves the repository root. Push to the branch configured in *Settings → Pages*; `CNAME` points the custom domain.
+GitHub Pages serves the repository root from `main`: https://dinhchinhdev.github.io/Portfolio_BA/
+
+**Custom domain (dinhchinh.work)** — not enabled yet. When DNS is ready:
+1. At the DNS provider add `A` records for `dinhchinh.work` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (and optionally `www` CNAME → `dinhchinhdev.github.io`).
+2. In *Settings → Pages → Custom domain* enter `dinhchinh.work` (GitHub creates the `CNAME` file) and tick *Enforce HTTPS* once the check passes.
+Canonical / Open Graph URLs in the pages already point at `https://dinhchinh.work/`.
 
 ## Contact form (FormSubmit)
 
