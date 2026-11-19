@@ -16,8 +16,8 @@ contact.html            Contact details + form (FormSubmit → delivered to your
 404.html                Not-found page (GitHub Pages serves it automatically; resolves links via <base> so it works at github.io/Portfolio_BA/ and on the custom domain)
 sitemap.xml, robots.txt SEO
 
-assets/css/main.css     Design system ("Liquid Glass"): tokens, glass surfaces, layout, components, light/dark
-assets/js/main.js       Theme toggle, mobile nav, cursor light, scroll reveal, filters, case-study TOC, contact form
+assets/css/main.css     Design system ("Spec System"): 60/30/10 tokens, blueprint panels, components
+assets/js/main.js       Mobile nav, ⌘K command palette, system map, flow draw, scroll reveal, filters, case-study TOC, contact form
 assets/images/          Optimised images (≤1600px). Originals kept in assets/images/_originals/
                         favicon.svg / favicon-32.png / apple-touch-icon.png — the "overlap" glyph (business ∩ engineering)
 assets/files/           CV PDF
@@ -41,9 +41,9 @@ The nav and footer are repeated in every page (no templating) — when you chang
 
 ## Theming
 
-All colours, radii, shadows and fonts are CSS custom properties at the top of `assets/css/main.css` (`:root` for light, `[data-theme="dark"]` for dark). The theme follows the OS setting until the visitor uses the toggle; the choice is stored in `localStorage` (`tdc-theme`).
+All colours, radii, fonts and motion values are CSS custom properties at the top of `assets/css/main.css`. The site is dark only and follows a 60/30/10 split: Midnight Black `#0b0d14` for surfaces and text, Electric Blue `#3366ff` for blueprint panels, diagrams and links, Sunset Orange `#ff7a1a` for one primary action per view. Design skills used to build it live in `.claude/skills/` (ui-ux-pro-max, motion-design, unslop).
 
-Handy URL flags for testing: `?theme=light` / `?theme=dark` forces a theme; `?nomotion=1` disables reveal animations.
+Handy URL flag for testing: `?nomotion=1` disables reveal animations. Press Ctrl K (⌘ K on Mac) on any page to open the command palette.
 
 ## Run locally
 
